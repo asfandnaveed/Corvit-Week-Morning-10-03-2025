@@ -6,37 +6,39 @@
     <title>Document</title>
 
     <style type="text/css">
+
         .box1{
             width: 400px;
-            height: 400px;
-            background-color: darksalmon;
+            height: 80px;
+            background-color: white;
+            border-radius: 5px;
             position: absolute;
-            z-index: 9;
-            right: 100px;
-            bottom: 10px;
+            bottom: 90px;
+            left: 100px;
             
             
         }
-        .box2{
-            width: 500px;
+
+        .parent{
+            width: 600px;
             height: 500px;
-            background-color: darkolivegreen;
+            position: relative;
+        }
+
+        .parent img{
             position: absolute;
-            
-            
-            
+            width: 100%;
         }
-        .box3{
-            width: 700px;
-            height: 700px;
-            background-color: darkcyan;
-            
-        }
+        
     </style>
 </head>
 <body>
-    <div class="box1">Box1</div>
-    <div class="box2">Box2</div>
-    <div class="box3">Box3</div>
+    <div class="parent">
+        <img src="assets/images/Pizza/product1.png">
+        <div class="box1">
+            <div>Pizza</div>
+        </div>
+    </div>
+    
 </body>
 </html>
