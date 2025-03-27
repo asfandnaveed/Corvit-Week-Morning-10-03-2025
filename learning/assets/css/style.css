@@ -1,0 +1,14 @@
+.top{
+    width: 100%;
+    height: 100px;
+    background-color: #FF7A04;
+}
+.middle{
+    margin-top: 20rem;
+    margin-bottom: 25rem;
+}
+.bottom{
+    width: 100%;
+    height: 200px;
+    background-color: lightcyan;
+}

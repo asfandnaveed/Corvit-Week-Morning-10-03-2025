@@ -1,0 +1,22 @@
+body{
+    font-family: "Poppins";
+}
+
+.bg_color{
+    background: linear-gradient(to right,#FFA453,#FFD0A7);
+}
+.heading1{
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+}
+.sub_heading{ 
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+}
+
+.explore_btn{
+    color: #FFA453;
+    font-weight: 500;
+}
