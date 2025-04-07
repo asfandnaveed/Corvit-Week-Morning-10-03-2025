@@ -1,0 +1,13 @@
+.bg_image{
+    background-image: url("../images/bg_image.png");
+    height: 100vh;
+    background-size: cover;
+}
+.heading{
+    font-family: "Inter";
+    font-size: 4.2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+.left-side{
+    height: 80vh;
+}
