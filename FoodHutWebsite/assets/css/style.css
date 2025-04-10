@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "sofiaPro";
+    src: url("../fonts/Sofia\ Pro\ Light\ Az.otf");
+}
+@font-face {
+    font-family: "sofiaProBold";
+    src: url("../fonts/Sofia\ Pro\ Bold\ Az.otf");
+}
+
+body{
+    font-family: "sofiaPro";
+}
+
+.people-div{
+    background-color: rgba(245, 71, 72, 0.3);
+}
+.bg-heart{
+    background-color: rgba(245, 71, 72, 1);
+    width: 25px;
+    height: 25px;
+
+}
+.heading-1-color{
+    color:rgba(245, 71, 72, 1);
+}
+.heading-2-color{
+    color: #FDC55E;
+}
+.heading{
+    font-size: 4rem;
+    font-family: "sofiaProBold";
+    font-weight: bold;
+}
+.sub-heading{
+    font-family: "sofiaPro";
+    font-size: 1.2rem;
+}
+.icon-search{
+    background-color: #FDC55E;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.search-bar{
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+}
+
+@media (max-width:786px) {
+
+    .heading{
+        font-size: 3rem;
+    }
+    
+}
