@@ -27,7 +27,7 @@
                 <input class="form-control" type="number" id="numberInput" placeholder="Enter Phone Number">
             </div>
             <div class="col-12">
-                <button  class="btn btn-success" onclick="TableData();">Submit</button>
+                <button class="btn btn-success" onclick="TableData();">Submit</button>
             </div>
         </div>
     </div>
@@ -35,68 +35,67 @@
     <table class="table table-dark" id="tbl">
 
     </table>
-   
-    
+
+
+
     <script>
 
         let username = [];
         let email = [];
         let phoneNumber = [];
-    
+
         function TableData() {
             const nameInput = document.getElementById('nameInput').value;
             const emailInput = document.getElementById('emailInput').value;
             const numberInput = document.getElementById('numberInput').value;
-    
+
             // Save the data
             username.push(nameInput);
             email.push(emailInput);
             phoneNumber.push(numberInput);
-    
+
             // Rebuild the table from scratch
             renderTable();
-    
+
             // Clear input fields
             document.getElementById('nameInput').value = "";
             document.getElementById('emailInput').value = "";
             document.getElementById('numberInput').value = "";
         }
-    
+
+
+
         function renderTable() {
             const table = document.getElementById('tbl');
             table.innerHTML = `
-                <thead>
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Phone</th>
-                        <th>Action</th>
+                        
                     </tr>
-                </thead>
+                
             `;
-    
+
             for (let x = 0; x < username.length; x++) {
                 table.innerHTML += `
                     <tr>
                         <td>${username[x]}</td>
                         <td>${email[x]}</td>
                         <td>${phoneNumber[x]}</td>
-                        <td><button class='btn btn-danger' onclick='deleteTableRow(${x})'>Delete</button></td>
+                        
                     </tr>
                 `;
             }
         }
-    
-        function deleteTableRow(index) {
-           username.splice(index,1);
-           email.splice(index,1);
-           phoneNumber.splice(index,1);
-           
-           renderTable();
-        }
-    
+
+       
+
+
+       
+
     </script>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
