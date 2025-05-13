@@ -24,3 +24,29 @@ body{
   backdrop-filter: blur(8px);
 }
 
+
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Georgia', serif;
+}
+
+.newspaper-bg {
+  background-color: #fffef8;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.font-serif {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h4, h5 {
+  letter-spacing: 0.5px;
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
