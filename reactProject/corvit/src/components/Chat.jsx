@@ -1,4 +1,6 @@
+import { push, ref } from "firebase/database";
 import React, { useState } from "react";
+import { db } from "../Firebase";
 
 
 
@@ -8,7 +10,18 @@ function Chat() {
 
 
     const sendMessage = (e) => {
+        e.preventDefault();
 
+        const data = ref(db,"chats");
+
+        const newMessage = {
+            message: message,
+            time: Date.now(),
+            sender:"User 1",
+            seen:false
+        };
+
+        push(data , newMessage).then(()=>setMessage(""));
 
     }
 
